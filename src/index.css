@@ -1,68 +1,199 @@
+@import "tailwindcss";
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+}
+
+.quantico-regular {
+  font-family: "Quantico", sans-serif;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.quantico-bold {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
-body {
-  margin: 0;
+.quantico-regular-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.quantico-bold-italic {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.page-box {
+  border: 3px solid red;
+  height: 100vh;
+  width: 100%;
+}
+
+.ball {
+  position: absolute;
+  top: 0%;
+  left: -7%;
+  height: 70px;
+  width: 70px;
+  border: solid 3px red;
+  border-radius: 50%;
+}
+
+.joke {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0;
+}
+
+.buttons {
+  position: absolute;
+  top: 60%;
+  width: 100%;
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.button-style {
+  height: 50px;
+  width: 50px;
+  border: 2px solid green;
+  margin: 50px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+@keyframes bounce-in{
+  0% {
+    top: 0%;
+    left: -7%;
+  }
+  30% {
+    top: 60%;
+    left: 15%;
+  }
+  60% {
+    top: 20%;
+    left: 30%;
+  }
+  90%{
+    top: 60%;
+    left: 45%;
+  }
+  100% {
+    top: 50%;
+    left: 47%;
+  }
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@keyframes bounce-out {
+  0% {
+    top: 50%;
+    left: 50%;
   }
-  a:hover {
-    color: #747bff;
+  20% {
+    top: 95%;
+    left: 60%;
   }
-  button {
-    background-color: #f9f9f9;
+  40% {
+    top: 60%;
+    left: 70%;
   }
+  60% {
+    top: 95%;
+    left: 80%;
+  }
+  80% {
+    top: 75%;
+    left: 90%;
+  }
+  100% {
+    top: 100%;
+    left: 105%;
+  }
+}
+
+@keyframes ball-shrink{
+  0% {
+      height: 70px;
+      width: 70px;
+      border: solid 3px red;
+  }
+  100% {
+      height: 0px;
+      width: 0px;
+      border: 0;
+  }
+}
+
+@keyframes ball-grow{
+  0% {
+      height: 0px;
+      width: 0px;
+      border: 0;
+  }
+  100% {
+      height: 70px;
+      width: 70px;
+      border: solid 3px red;
+  }
+}
+
+@keyframes font-grow{
+  0% {
+    font-size: 0;
+  }
+  100% {
+    font-size: 36pt;
+  }
+}
+
+@keyframes font-shrink{
+  0% {
+    font-size: 36pt;
+  }
+  100% {
+    font-size: 0;
+  }
+}
+
+.start-bounce {
+  animation: 3s linear 1s bounce-in;
+  animation-fill-mode: both;
+}
+
+.end-bounce {
+  animation: 3s linear 1s bounce-out;
+  animation-fill-mode: both;
+}
+
+.start-grow {
+  animation: 1s linear 1s font-grow;
+  animation-fill-mode: both;
+}
+
+.end-grow {
+  animation: 1s linear 1s font-shrink;
+  animation-fill-mode: both;
+}
+
+.start-ball-shrink {
+  top: 47%;
+  left: 50%;
+  animation: 1s linear 1s ball-shrink;
+  animation-fill-mode: both;
+}
+
+.end-ball-shrink {
+  top: 47%;
+  left: 50%;
+  animation: 1s linear 1s ball-grow;
+  animation-fill-mode: both;
 }
