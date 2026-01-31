@@ -12,12 +12,12 @@ interface NavProps {
 
 const NavComponent: React.FC<NavProps> = ({ links }) => {
   return (
-    <nav className='flex flex-row w-1/4 justify-evenly text-teal-600 font-skinny text-2xl'>
+    <nav className='flex flex-row w-1/3 h-20 lg:h-36 justify-evenly items-end text-joker-200 font-quantico text-2xl lg:text-4xl'>
       {links.map((link, index) => (
-        <div key={index} className=''>
+        <div key={index} className='pb-2'>
             <NavLink
                 to={link.path}
-                className="focus:font-thick focus:text-lg cursor-pointer"
+                className="hover:border-b-2 hover:border-joker-200 hover:brightness-150 focus:font-bold cursor-pointer"
             >
               {link.name}
             </NavLink>
