@@ -18,11 +18,11 @@ function HeaderComponent({ links }: HeaderProps){
   const {width} = useScreenSize();
 
   return (
-    <div className="flex flex-row justify-between h-24 items-center px-8 border-b-2 border-teal-800 bg-green-300">
-      <div className="absolute top-0 left-0 h-1/4 w-1/4 z-100">
-        <img src={jokerLogo} alt="joker logo" className="h-80"/>
+    <div className="flex flex-row justify-between h-15 sm:h-20 lg:h-36 items-center px-8 bg-black">
+      <div className="absolute top-1 lg:top-2 -left-2 sm:h-40 sm:-left-1 lg:left-0 h-30 lg:h-64 z-100">
+        <img src={jokerLogo} alt="joker logo" className="h-full w-full"/>
       </div>
-      <h3 className="text-7xl font-quantico cursor-pointer font-bold text-purple-400" onClick={() => {navigate('/joker')}} >oker</h3>
+      <h3 className="text-4xl ml-12 sm:ml-20 sm:text-6xl lg:text-8xl lg:ml-38 font-quantico cursor-pointer font-bold text-joker-100" onClick={() => {navigate('/joker')}} >OKER</h3>
       {(width > 820) ? <NavComponent links={links}/> :
       <MobileNavComponent links={links} />}
     </div>

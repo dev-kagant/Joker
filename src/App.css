@@ -6,7 +6,8 @@
   --font-quantico: "Quantico", sans-serif;
 
   /* colors */
-
+  --color-joker-100: oklch(0.6889 0.1381 312.43);
+  --color-joker-200: oklch(0.7514 0.1296 148.91);
   /* animations */
   --animate-ball-drop: ball-drop 0.3s linear;
 
