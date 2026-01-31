@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function TestingDiv() {
+function JokeComponent() {
     const [bounce, setBounce] = useState('start-bounce');
     const [ballSize, setBallSize] = useState('');
     const [fontSize, setFontSize] = useState('');
@@ -8,6 +8,7 @@ function TestingDiv() {
     const handleBounce = () => {
         if(bounce === 'start-bounce'){
             setBounce('end-bounce');
+            setBallSize('');
         }
         if(bounce === 'end-bounce'){
             setBounce('start-bounce');
@@ -37,4 +38,4 @@ function TestingDiv() {
   )
 }
 
-export default TestingDiv
+export default JokeComponent

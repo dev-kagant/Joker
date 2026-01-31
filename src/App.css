@@ -1,2 +1,25 @@
-#root {
+@import "tailwindcss";
+
+@theme {
+
+  /* fonts */
+  --font-quantico: "Quantico", sans-serif;
+
+  /* colors */
+
+  /* animations */
+  --animate-ball-drop: ball-drop 0.3s linear;
+
+  /* keyframes */
+  @keyframes ball-drop-in {}
+  @keyframes ball-drop-out {}
+  @keyframes ball-bounce {}
+  @keyframes shadow-drop-in {}
+  @keyframes shadow-drop-out {}
+  @keyframes shadow-bounce {}
+  @keyframes question-grow {}
+  @keyframes question-shrink {}
+  @keyframes answer-grow {}
+  @keyframes answer-shrink {}
+ 
 }
