@@ -12,7 +12,7 @@ interface NavProps {
 
 const NavComponent: React.FC<NavProps> = ({ links }) => {
   return (
-    <nav className='flex flex-row w-1/3 h-20 lg:h-36 justify-evenly items-end text-joker-200 font-quantico text-2xl lg:text-4xl'>
+    <nav className='flex flex-row w-1/3 lg:w-1/2 xl: w-1/3 h-20 lg:h-36 justify-evenly items-end text-joker-200 font-quantico text-2xl lg:text-4xl'>
       {links.map((link, index) => (
         <div key={index} className='pb-2'>
             <NavLink

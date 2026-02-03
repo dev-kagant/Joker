@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function JokeComponent() {
-    const [bounce, setBounce] = useState('start-bounce');
+    const [bounce, setBounce] = useState('ball-drop-in');
     const [ballSize, setBallSize] = useState('');
     const [fontSize, setFontSize] = useState('');
 
@@ -27,8 +27,8 @@ function JokeComponent() {
     }
 
   return (
-    <div className='page-box'>
-        <div className={`ball ${bounce} ${ballSize}`}></div>
+    <div className='h-full w-full'>
+        <div className={`text-center z-100 h-4 w-full rounded-full bg-joker-200 text-joker-100 transform-[translate(-50%, -50%)] relative ${bounce}`}>Jokes to be shared, and more jokes to come, just hit next.</div>
         <div className={`joke ${fontSize}`}>There is a joke here</div>
         <div className='buttons'>
             <button className='button-style' onClick={handleSize}>Answer</button>

@@ -1,3 +1,4 @@
+import React from 'react';
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import LandingPage from "./pages/LandingPage";
@@ -16,9 +17,9 @@ const navLinks: NavLinkItem[] = [
   { name: "Creator", path: "/joker/creator" },
 ];
 
-function App(): JSX.Element {
+function App(): React.JSX.Element {
   return (
-    <div className="min-h-screen bg-slate-900 font-quantico">
+    <div className="max-h-screen bg-slate-900 font-quantico">
       <Router>
         <HeaderComponent links={navLinks}/>
         <Routes>
