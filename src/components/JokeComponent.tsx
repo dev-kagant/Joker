@@ -1,38 +1,38 @@
 import React, { useState } from 'react'
 
 function JokeComponent() {
-    const [bounce, setBounce] = useState('ball-drop-in');
-    const [ballSize, setBallSize] = useState('');
-    const [fontSize, setFontSize] = useState('');
+    const [ballIn, setBallIn] = useState('ball-drop-in');
+    const [ballOut, setBallOut] = useState('');
+    const [joke, setJoke] = useState('joke-grow');
+    const [punchline, setPunchline] = useState('');
 
-    const handleBounce = () => {
-        if(bounce === 'start-bounce'){
-            setBounce('end-bounce');
-            setBallSize('');
-        }
-        if(bounce === 'end-bounce'){
-            setBounce('start-bounce');
-        }
+    const fetchJoke = () => {
+
     }
 
-    const handleSize = () => {
-        if(fontSize === ''||'end-grow'){
-            setFontSize('start-grow');
-            setBallSize('start-ball-shrink')
-        }
-        if(fontSize === 'start-grow'){
-            setFontSize('end-grow');
-            setBallSize('end-ball-shrink')
-        }
+    const handleNextJoke = () => {
+        setBallOut("ball-drop-out");
+        setBallIn("ball-drop-in");
+        setJoke("joke-grow");
+        setPunchline("joke-shrink");
+    }
+
+    const handlePunchline = () => {
+        setBallIn("ball-bounce");
+        setBallOut("");
+        setJoke("joke-shrink");
+        setPunchline("joke-grow");
     }
 
   return (
-    <div className='h-full w-full'>
-        <div className={`text-center z-100 h-4 w-full rounded-full bg-joker-200 text-joker-100 transform-[translate(-50%, -50%)] relative ${bounce}`}>Jokes to be shared, and more jokes to come, just hit next.</div>
-        <div className={`joke ${fontSize}`}>There is a joke here</div>
+    <div className='h-full w-full relative'>
+        <div className={`z-2 h-4 w-full rounded-full bg-joker-200 text-joker-100 transform-[translate(-50%, -50%)] absolute ${ballIn}`}></div>
+        <div className={`z-2 rounded-full bg-joker-200 text-joker-100 transform-[translate(-50%, -50%)] absolute ${ballOut}`}></div>
+        <div className={`z-3 absolute text-center text-joker-100 top-[30%] left-[50%] font-quantico font-bold transform-[translate(-50%, -50%)] ${joke}`}>Jokes to be shared, and more jokes to come, just hit next.</div>
+        <div className={`z-3 text-[0px] absolute text-center text-joker-100 top-[30%] left-[50%] font-quantico font-bold transform-[translate(-50%, -50%)] ${punchline}`}>Answers to the jokes to be shared, and more punch lines to come, just hit next.</div>
         <div className='buttons'>
-            <button className='button-style' onClick={handleSize}>Answer</button>
-            <button className='button-style' onClick={handleBounce}>Next</button>
+            <button className='button-style' onClick={handlePunchline}>Punchline</button>
+            <button className='button-style' onClick={handleNextJoke}>Next Joke</button>
         </div>
     </div>
   )
