@@ -6,3 +6,4 @@ Utitlizing the jokeApi to create an application that allows users to have a rand
 
 ## Resources
 [Font](https://fonts.google.com/selection/embed)
+[JokeAPI](https://sv443.net/jokeapi/v2/#getting-started)
