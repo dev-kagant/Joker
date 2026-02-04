@@ -47,14 +47,14 @@
     top: 95%;
     left: 38%;
   }
-  80%{
+  90%{
     height: 30px;
     width: 30px;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  85%{
+  99%{
     height: 0px;
     width: 0px;
     top: 35%;
@@ -101,14 +101,14 @@
     top: 95%;
     left: 38%;
   }
-  80%{
+  90%{
     height: 40px;
     width: 40px;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  85%{
+  99%{
     height: 0px;
     width: 0px;
     top: 35%;
@@ -155,14 +155,14 @@
     top: 95%;
     left: 38%;
   }
-  80%{
+  90%{
     height: 48px;
     width: 48px;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  85%{
+  99%{
     height: 0px;
     width: 0px;
     top: 40%;
@@ -199,11 +199,8 @@
   0% {
     font-size: 0;
   }
-  80% {
+  99% {
     font-size: 0;
-  }
-  90% {
-    width: 50%;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -221,11 +218,8 @@
   0% {
     font-size: 0;
   }
-  80% {
+  99% {
     font-size: 0;
-  }
-  90% {
-    width: 50%;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -243,11 +237,8 @@
   0% {
     font-size: 0;
   }
-  80% {
+  99% {
     font-size: 0;
-  }
-  90% {
-    width: 50%;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -287,33 +278,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  15% {
-    height: 0px;
-    width: 0px;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);    
-  }
-  20%{
+  5%{
     height: 30px;
     width: 30px;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  50% {
+  40% {
     top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  80%{
+  90%{
     height: 30px;
     width: 30px;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  85%{
+  99%{
     height: 0px;
     width: 0px;
     top: 35%;
@@ -336,33 +320,26 @@
     left: 50%;      
     transform: translate(-50%, -50%);
   }
-  15% {
-    height: 0px;
-    width: 0px;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);   
-  }
-  20%{
+  5% {
     height: 40px;
     width: 40px;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  50% {
+  40% {
     top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  80%{
+  90%{
     height: 40px;
     width: 40px;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  85%{
+  99%{
     height: 0px;
     width: 0px;
     top: 35%;
@@ -385,33 +362,26 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  15% {
-    height: 0px;
-    width: 0px;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);    
-  }
-  20%{
+  5% {
     height: 30px;
     width: 30px;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  50% {
+  40% {
     top: 95%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  80%{
+  90%{
     height: 48px;
     width: 48px;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  85%{
+  99%{
     height: 0px;
     width: 0px;
     top: 40%;
@@ -428,18 +398,35 @@
 }
 
 .ball-bounce {
-  animation: 3s linear 1s ball-bounce-sm;
+  animation: 1s linear 1s ball-bounce-sm;
   animation-fill-mode: both;
 
   /* medium  */
   @media (min-width: 768px) {
-    animation: 3s linear 1s ball-bounce-md;
+    animation: 1s linear 1s ball-bounce-md;
     animation-fill-mode: both;
   } 
   
   /* large   */
   @media (min-width: 1024px) {
-    animation: 3s linear 1s ball-bounce-lg;
+    animation: 1s linear 1s ball-bounce-lg;
+    animation-fill-mode: both;
+  } 
+}
+
+.joke-bounce {
+  animation: 1s linear 1s joke-grow-sm;
+  animation-fill-mode: both;
+
+  /* medium  */
+  @media (min-width: 768px) {
+    animation: 1s linear 1s joke-grow-md;
+    animation-fill-mode: both;
+  } 
+  
+  /* large   */
+  @media (min-width: 1024px) {
+    animation: 1s linear 1s joke-grow-lg;
     animation-fill-mode: both;
   } 
 }
@@ -452,14 +439,9 @@
     left: 50%;      
     transform: translate(-50%, -50%);
   }
-  15% {
-    width: 50%;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  20% {
+  1% {
     font-size: 0;
+    width: 50%;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -479,14 +461,9 @@
     left: 50%;      
     transform: translate(-50%, -50%);
   }
-  15% {
-    width: 50%;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  20% {
+  1% {
     font-size: 0;
+    width: 50%;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -506,14 +483,9 @@
     left: 50%;      
     transform: translate(-50%, -50%);
   }
-  15% {
-    width: 50%;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  20% {
+  1% {
     font-size: 0;
+    width: 50%;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -551,21 +523,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  15% {
-    height: 0px;
-    width: 0px;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  20% {
+  5% {
     height: 30px;
     width: 30px;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  30% {
+  25% {
     height: 30px;
     width: 30px;
     top: 95%;
@@ -575,7 +540,7 @@
   45% {
     height: 30px;
     width: 30px;
-    top: 50%;
+    top: 70%;
     left: 70%;
     transform: translate(-50%, -50%);
   }
@@ -589,7 +554,7 @@
   75% {
     height: 30px;
     width: 30px;
-    top: 70%;
+    top: 80%;
     left: 90%;
     transform: translate(-50%, -50%);
   }
@@ -616,21 +581,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  15% {
-    height: 0px;
-    width: 0px;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  20% {
+  5% {
     height: 40px;
     width: 40px;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  30% {
+  25% {
     height: 40px;
     width: 40px;
     top: 95%;
@@ -640,7 +598,7 @@
   45% {
     height: 40px;
     width: 40px;
-    top: 50%;
+    top: 70%;
     left: 70%;
     transform: translate(-50%, -50%);
   }
@@ -654,7 +612,7 @@
   75% {
     height: 40px;
     width: 40px;
-    top: 70%;
+    top: 80%;
     left: 90%;
     transform: translate(-50%, -50%);
   }
@@ -681,21 +639,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  15% {
-    height: 0px;
-    width: 0px;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  20% {
+  5% {
     height: 48px;
     width: 48px;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  30% {
+  25% {
     height: 48px;
     width: 48px;
     top: 95%;
@@ -705,7 +656,7 @@
   45% {
     height: 48px;
     width: 48px;
-    top: 50%;
+    top: 70%;
     left: 70%;
     transform: translate(-50%, -50%);
   }
@@ -719,7 +670,7 @@
   75% {
     height: 48px;
     width: 48px;
-    top: 70%;
+    top: 80%;
     left: 90%;
     transform: translate(-50%, -50%);
   }
