@@ -9,8 +9,45 @@
   --color-joker-100: oklch(0.6889 0.1381 312.43);
   --color-joker-200: oklch(0.7514 0.1296 148.91);
 
-  /* animations */
-  --animate-ball-drop-in: ball-drop-in 3s linear;
+}
+
+.mobile-image {
+  @media (min-height: 400px) {
+    width: calc(1/6 * 100%);
+  } 
+  @media (min-height: 750px) {
+    width: calc(1/5 * 100%);
+  } 
+  /* @media (min-height: 900px) {
+    width: calc(1/4.8 * 100%);
+  }  */
+}
+
+.mobile-font {
+  @media (min-height: 400px) {
+    font-size: 9pt;
+  } 
+  @media (min-height: 750px) {
+    font-size: 10pt;
+  } 
+  @media (min-height: 900px) {
+    font-size: 11pt;
+  } 
+}
+
+.mobile-projects {
+  @media (min-height: 400px) {
+    height: 100px;
+    width: 100px;
+  } 
+  @media (min-height: 750px) {
+    height: 150px;
+    width: 150px;
+  } 
+  @media (min-height: 900px) {
+    height: 160px;
+    width: 160px;
+  } 
 
 }
 
