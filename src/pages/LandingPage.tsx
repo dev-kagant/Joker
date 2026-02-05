@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import JokeComponent from '../components/JokeComponent'
 
 function LandingPage() {
