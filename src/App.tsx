@@ -19,7 +19,7 @@ const navLinks: NavLinkItem[] = [
 
 function App(): React.JSX.Element {
   return (
-    <div className="max-h-screen bg-slate-900 font-quantico">
+    <div className="h-full bg-slate-900 font-quantico">
       <Router>
         <HeaderComponent links={navLinks}/>
         <Routes>
