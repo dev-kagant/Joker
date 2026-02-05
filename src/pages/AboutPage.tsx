@@ -12,6 +12,8 @@ const AboutPage = () => {
   
   const challengeThree = "Mastered the synergy between @keyframes and TailwindCSS to create physics-based animations that respect a utility-first design system.";
 
+  const challengeFour = "The project branding was developed through a hybrid workflow, utilizing AI-generated concepts refined and vectorized within Adobe Illustrator to produce a high-fidelity, scalable SVG logo."
+
   return (
     <div  className="h-full w-full lg:px-14">
       <h1 className='flex justify-center my-8 text-joker-200 font-quantico font-bold text-5xl sm:text-5xl sm:my-12 md:text-6xl lg:text-8xl lg:my-20'>JOKER</h1>
@@ -31,7 +33,7 @@ const AboutPage = () => {
       </div>
       <div className='flex flex-col justify-center items-center rounded-4xl p-4 m-4 sm:m-10 sm:p-12 lg:p-16'>
         <h2 className='font-quantico font-bold text-xl text-joker-200 mb-4 sm:text-3xl sm:mb-6 md:text-4xl lg:text-5xl lg:mb-14'>Tech & Resources</h2>
-          <div className="flex flex-row justify-between w-7/8 font-quantico text-slate-400 text-base">
+          <div className="flex flex-row justify-between w-7/8 font-quantico text-slate-400 text-lg sm:text-2xl lg:text-4xl">
             <ul className="flex flex-col justify-center items-center">
                 <li>Typescript</li>
                 <li>React</li>
@@ -51,7 +53,8 @@ const AboutPage = () => {
         <ul className="w-5/6">
           <li className='list-disc text-left w-full text-lg text-slate-400 mb-4 sm:text-2xl lg:text-4xl lg:mb-10'>{challengeOne}</li>
           <li className='list-disc text-left w-full text-lg text-slate-400 mb-4 sm:text-2xl lg:text-4xl lg:mb-10'>{challengeTwo}</li>
-          <li className='list-disc text-justify text-lg text-slate-400 sm:text-2xl lg:text-4xl'>{challengeThree}</li>
+          <li className='list-disc text-left w-full text-lg text-slate-400 mb-4 sm:text-2xl lg:text-4xl lg:mb-10'>{challengeThree}</li>
+          <li className='list-disc text-justify text-lg text-slate-400 sm:text-2xl lg:text-4xl'>{challengeFour}</li>
         </ul>
       </div>
     </div>
