@@ -24,7 +24,7 @@ const MobileNavComponent: React.FC<MobileNavProps> = ({ links }) => {
       {activeMenu ? (
       <nav className='flex flex-col absolute right-0 top-15 sm:top-20 w-1/2 h-auto opacity-95 text-joker-200 font-quantico text-2xl z-10'>
         {links.map((link, index) => (
-          <div key={index} className='flex flex-row justify-end w-full p-4 sm:my-2'>
+          <div key={index} className='flex flex-row justify-end w-full p-2 sm:p-4 sm:my-2'>
             <NavLink
                 to={link.path}
                 className=" cursor-pointer text-2xl sm:text-4xl"

@@ -2,7 +2,7 @@ import React from 'react';
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import LandingPage from "./pages/LandingPage";
-// import AboutPage from "./pages/AboutPage";
+import AboutPage from "./pages/AboutPage";
 import CreatorPage from "./pages/CreatorPage";
 import HeaderComponent from "./components/HeaderComponent";
 
@@ -24,7 +24,7 @@ function App(): React.JSX.Element {
         <HeaderComponent links={navLinks}/>
         <Routes>
           <Route path="/joker" element={<LandingPage />} />
-          {/* <Route path="/joker/about" element={<AboutPage />} /> */}
+          <Route path="/joker/about" element={<AboutPage />} />
           <Route path="/joker/creator" element={<CreatorPage />} />
         </Routes>
       </Router>
