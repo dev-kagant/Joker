@@ -66,7 +66,7 @@ function JokeComponent() {
     }
 
   return (
-    <div className='h-full w-full relative'>
+    <div className='h-full w-full relative overflow-hidden'>
         <div className={`z-2 h-4 w-full rounded-full bg-joker-200 text-joker-100 transform-[translate(-50%, -50%)] absolute ${ballIn}`}></div>
         <div className={`z-2 rounded-full bg-joker-200 text-joker-100 transform-[translate(-50%, -50%)] absolute ${ballOut}`}></div>
         <div className={`z-3 absolute text-center text-joker-100 top-[30%] left-[50%] font-quantico font-bold transform-[translate(-50%, -50%)] ${jokeStyles}`}>{joke}</div>
