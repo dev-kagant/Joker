@@ -3,7 +3,7 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://dev-kagant.github.io/Joker",
+  "homepage": "https://dev-kagant.github.io/Joker",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
