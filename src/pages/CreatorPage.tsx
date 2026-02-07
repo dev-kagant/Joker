@@ -1,4 +1,6 @@
 import { SocialIcon } from 'react-social-icons';
+import Smile from '../assets/smilePic2.jpg';
+import Scribble from '../assets/Scribble.png';
 
 const CreatorPage = () => {
 
@@ -6,7 +8,7 @@ const CreatorPage = () => {
   return (
     <div className='flex flex-col justify-evenly items-center h-[calc(100vh+100px)] lg:h-auto mb-1 p-2 bg-slate-900 w-full'>
       <div className='flex flex-col justify-center items-center sm:mt-12'>
-        <img src="./smilePic2.jpg" className='w-1/4 sm:w-1/5 xl:w-1/6 my-2 rounded-full border-4 border-joker-100 lg:mb-4'></img>
+        <img src={Smile} className='w-1/4 sm:w-1/5 xl:w-1/6 my-2 rounded-full border-4 border-joker-100 lg:mb-4'></img>
         <h1 className='font-quantico font-bold text-3xl sm:text-5xl sm:mt-4 lg:text-6xl xl:text-7xl text-joker-200'>Kerri Gant</h1>
       </div>
       <div className='flex flex-col items-center lg:mt-8'>
@@ -19,7 +21,7 @@ const CreatorPage = () => {
           <div className="flex flex-col justify-center items-center mx-4">
             <h4 className="font-quantico text-base mb-2 sm:text-xl lg:text-2xl lg:mb-4 text-slate-400 mb-1">SCRIBBLE</h4>
             <a href="https://dev-kagant.github.io/Scribble/" className='h-[120px] w-[120px] sm:h-[200px] sm:w-[200px] lg:h-[250px] lg:w-[250px] border-2 border-joker-100 cursor-pointer'>
-              <img src="./Scribble.png" className='h-full w-full'/>
+              <img src={Scribble} className='h-full w-full'/>
             </a>
           </div>
           {/* <div className="flex flex-col justify-center items-center mx-4">
