@@ -6,7 +6,7 @@ const CreatorPage = () => {
 
   const AboutMe = "I’ve been building in the digital space since 2016, turning my passion into a professional career in 2021. While I am a capable Full Stack Developer, my heart lies in the Frontend. I specialize in creating seamless, interactive user interfaces that bridge the gap between complex logic and intuitive design."
   return (
-    <div className='flex flex-col justify-evenly items-center h-[calc(100vh+100px)] lg:h-auto mb-1 p-2 bg-slate-900 w-full'>
+    <div className='flex flex-col justify-evenly items-center h-[calc(100vh+100px)] lg:h-auto  p-2 bg-slate-900 w-full'>
       <div className='flex flex-col justify-center items-center sm:mt-12'>
         <img src={Smile} className='w-1/4 sm:w-1/5 xl:w-1/6 my-2 rounded-full border-4 border-joker-100 lg:mb-4'></img>
         <h1 className='font-quantico font-bold text-3xl sm:text-5xl sm:mt-4 lg:text-6xl xl:text-7xl text-joker-200'>Kerri Gant</h1>

@@ -48,7 +48,7 @@ const AboutPage = () => {
             </ul>
           </div>
       </div>
-      <div className='flex flex-col justify-center items-center rounded-4xl p-4 m-4 sm:m-10 sm:p-12 lg:p-16'>
+      <div className='flex flex-col justify-center items-center rounded-4xl p-4 mx-4 sm:p-12 lg:p-16'>
         <h2 className='font-quantico font-bold text-center text-xl text-joker-200 mb-4 sm:text-3xl sm:mb-6 md:text-4xl lg:text-5xl lg:mb-14'>Key Development Details and Challenges</h2>
         <ul className="w-5/6">
           <li className='list-disc text-left w-full text-lg text-slate-400 mb-4 sm:text-2xl lg:text-4xl lg:mb-10'>{challengeOne}</li>
